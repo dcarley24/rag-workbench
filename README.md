@@ -4,7 +4,7 @@ RAG Workbench is a personal, self-hosted search engine that allows you to "chat"
 
 The application is built with a Python/Flask backend and a clean, responsive interface using Tailwind CSS.
 
-![Workbench Screenshot](https://raw.githubusercontent.com/dcarley24/rag-workbench/main/screenshot.jpg)
+![Workbench Screenshot](https://raw.githubusercontent.com/dcarley24/rag-workbench/main/screenshot.png)
 
 ## Key Features
 
