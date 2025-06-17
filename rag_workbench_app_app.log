@@ -1,0 +1,10 @@
+Loading existing data from disk...
+Loaded 1795 chunks and a FAISS index with 1795 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [17/Jun/2025 13:02:21] "GET /ask HTTP/1.1" 200 -

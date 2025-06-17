@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RAG Workbench</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.5.x/dist/typography.min.css"/>
+    <style>
+        .font-serif { font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif; }
+        .font-sans { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; }
+    </style>
+</head>
+<body class="bg-stone-100 font-sans">
+    <div class="flex flex-col md:flex-row min-h-screen">
+        <div class="w-full md:w-1/3 bg-white/80 backdrop-blur-sm border-r border-stone-200 p-6 flex flex-col">
+            <div class="flex justify-between items-center mb-6">
+                 <h1 class="text-2xl font-bold text-slate-800">RAG Workbench</h1>
+            </div>
+
+            <form id="query-form" class="flex-grow flex flex-col">
+                <div class="flex-grow">
+                    <label for="query" class="text-sm font-semibold text-slate-600 mb-2 block">Ask a question</label>
+                    <textarea id="query" name="query" class="w-full border-stone-300 rounded-lg p-3 text-base shadow-sm focus:ring-blue-600 focus:border-blue-600" rows="8" placeholder="Ask a question about your uploaded documents..."></textarea>
+                </div>
+                <button type="submit" class="w-full mt-4 px-6 py-3 bg-blue-700 text-white font-bold rounded-lg hover:bg-blue-800 shadow flex items-center justify-center">
+                    <svg id="ask-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 inline-block mr-2"><path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z" clip-rule="evenodd" /></svg>
+                    <span id="ask-text">Ask</span>
+                </button>
+            </form>
+
+            <div id="left-panel-bottom" class="mt-auto pt-6 border-t border-stone-200">
+                 <div class="mt-4">
+                    <h3 id="upload-header" class="text-sm font-semibold text-slate-600 mb-2 cursor-pointer flex justify-between items-center hover:text-blue-700">
+                        <span>Upload & Process</span>
+                        <svg id="upload-chevron" class="w-5 h-5 transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>
+                    </h3>
+                    <div id="upload-content" class="hidden">
+                        <form id="upload-form" class="space-y-3 mt-2 border-t pt-4">
+                             <p class="text-xs text-slate-500">Upload `.pdf`, `.docx`, `.txt`, or archives like `.zip`, `.tar.gz`.</p>
+                             <input type="file" name="files" multiple required class="w-full border rounded p-2 text-sm bg-gray-50 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">
+                             <button type="submit" class="w-full px-4 py-2 bg-slate-700 text-white text-sm font-semibold rounded-lg hover:bg-slate-800">Upload and Process</button>
+                        </form>
+                    </div>
+                 </div>
+
+
+                 <div id="progress-container" class="mt-4 hidden">
+                    <p id="progress-text" class="text-sm font-semibold text-slate-600 mb-2">Processing...</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div id="progress-bar" class="bg-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+                    </div>
+                    <p id="progress-details" class="text-xs text-slate-500 mt-1">&nbsp;</p>
+                </div>
+
+                <div class="mt-6">
+                     <h3 class="text-sm font-semibold text-slate-600 mb-2">Indexed Sources</h3>
+                     <div class="text-xs text-slate-500 space-y-1 max-h-32 overflow-y-auto">
+                         {% for file in source_files %}<p class="truncate" title="{{ file }}">{{ file }}</p>{% else %}<p>No documents uploaded yet.</p>{% endfor %}
+                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full md:w-2/3 p-6 md:p-10">
+            <div id="results-container">
+                <div id="welcome-panel" class="flex items-center justify-center h-full">
+                    <div class="text-center text-slate-500 max-w-3xl border-2 border-dashed border-slate-300 rounded-lg p-10">
+                        <h2 class="text-4xl font-bold text-slate-700">Welcome to the Workbench</h2>
+                        <p class="mt-2 text-xl text-slate-600">Upload documents and ask questions to get started.</p>
+                        <div id="guidance-block" class="mt-8 text-left p-8 bg-white/60 border rounded-lg">
+                             <h3 class="font-bold text-xl text-slate-700">Not sure what to ask? Try these ideas:</h3>
+                             <ul class="mt-4 space-y-4 text-lg text-slate-600 list-disc list-inside">
+                                 <li><strong>Ask for a summary</strong> to get a high-level overview.</li>
+                                 <li><strong>Compare and contrast</strong> two concepts from your documents.</li>
+                                 <li><strong>Request a list</strong> to get structured information.</li>
+                                 <li><strong>Define a key term</strong> you've come across.</li>
+                             </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="answer-wrapper" class="hidden"></div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/markdown-it@14.0.0/dist/markdown-it.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // --- RAG Query Elements and Logic ---
+        const queryForm = document.getElementById('query-form');
+        const queryInput = document.getElementById('query');
+        const welcomePanel = document.getElementById('welcome-panel');
+        const answerWrapper = document.getElementById('answer-wrapper');
+        const askButton = queryForm.querySelector('button');
+        const askText = document.getElementById('ask-text');
+
+        const md = window.markdownit();
+        let eventSource;
+        let streamFinishedCleanly = false;
+
+        function buildSourcesHtml(sources) {
+            let container = document.createElement('div');
+            container.className = 'mt-6';
+            let button = document.createElement('button');
+            button.className = 'text-sm font-semibold text-blue-700 hover:text-blue-900 flex items-center';
+            button.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2"><path fill-rule="evenodd" d="M15.312 11.312a.75.75 0 0 1 0-1.062l-4.5-4.5a.75.75 0 0 1 1.062-1.062l4.5 4.5a.75.75 0 0 1 0 1.062l-4.5 4.5a.75.75 0 1 1-1.062-1.062l4.5-4.5ZM7.812 11.312a.75.75 0 0 1 0-1.062L3.312 5.75a.75.75 0 0 1 1.062-1.062l4.5 4.5a.75.75 0 0 1 0 1.062l-4.5 4.5a.75.75 0 0 1-1.062-1.062l4.5-4.5Z" clip-rule="evenodd" /></svg>View Sources (${sources.length} chunks retrieved)`;
+            let chunksDiv = document.createElement('div');
+            chunksDiv.id = 'context-chunks';
+            chunksDiv.className = 'hidden mt-4 space-y-4';
+            sources.forEach(r => {
+                let chunkEl = document.createElement('div');
+                chunkEl.className = 'bg-white/70 border rounded-lg p-4 text-sm';
+                let sourceText = r.source_file ? `Source: ${r.source_file}` : 'Source: unknown';
+                let contentText = r.content || '';
+                chunkEl.innerHTML = `<p class="font-semibold text-slate-600 text-xs mb-2">${sourceText}</p><p class="text-slate-800 font-serif whitespace-pre-wrap">${contentText}</p>`;
+                chunksDiv.appendChild(chunkEl);
+            });
+            button.onclick = () => chunksDiv.classList.toggle('hidden');
+            container.appendChild(button);
+            container.appendChild(chunksDiv);
+            return container;
+        }
+
+        queryForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const query = queryInput.value;
+            if (!query) return;
+
+            if (eventSource) { eventSource.close(); }
+            streamFinishedCleanly = false;
+
+            welcomePanel.classList.add('hidden');
+            answerWrapper.innerHTML = `<div id="answer-content-wrapper" class="bg-white rounded-lg shadow-md border border-stone-200"><div class="p-6"><div id="answer-content" class="prose prose-lg"></div></div></div>`;
+            answerWrapper.classList.remove('hidden');
+            askText.textContent = 'Generating...';
+            askButton.disabled = true;
+
+            const answerContent = document.getElementById('answer-content');
+            let fullResponse = "";
+
+            eventSource = new EventSource(`/ask-stream?query=${encodeURIComponent(query)}`);
+
+            eventSource.onmessage = function(event) {
+                const data = JSON.parse(event.data);
+                if (data.token) {
+                    fullResponse += data.token;
+                    answerContent.innerHTML = md.render(fullResponse);
+                } else if (data.status) {
+                    fullResponse += `\n\n**${data.status}**\n\n`;
+                    answerContent.innerHTML = md.render(fullResponse);
+                } else if (data.sources_data) {
+                    const sourcesNode = buildSourcesHtml(data.sources_data);
+                    answerWrapper.appendChild(sourcesNode);
+                } else if (data.error) {
+                    answerContent.innerHTML += `<p class="text-red-500">${data.error}</p>`;
+                } else if (data.end_of_stream) {
+                    streamFinishedCleanly = true;
+                    resetAskButton();
+                }
+            };
+
+            eventSource.onerror = function(err) {
+                console.error("EventSource failed:", err);
+                if (!streamFinishedCleanly) {
+                    answerWrapper.innerHTML += "<p class='text-red-500 font-semibold mt-4'>Error: Connection to server lost.</p>";
+                }
+                resetAskButton();
+            };
+        });
+
+        function resetAskButton() {
+            if (eventSource) { eventSource.close(); }
+            askText.textContent = 'Ask';
+            askButton.disabled = false;
+
+            // Move the guidance block to the left panel as 'Query Tips'
+            const guidance = document.getElementById('guidance-block');
+            const leftPanelBottom = document.getElementById('left-panel-bottom');
+
+            if (guidance && !leftPanelBottom.querySelector('#query-tips')) {
+                guidance.id = 'query-tips';
+                const tipsHeader = guidance.querySelector('h3');
+                tipsHeader.textContent = '? Query Tips';
+                tipsHeader.className = 'text-sm font-semibold text-slate-600 hover:text-blue-700 cursor-pointer flex items-center';
+                const tipsList = guidance.querySelector('ul');
+                tipsList.classList.add('hidden', 'mt-2', 'p-4', 'bg-stone-50', 'rounded-lg', 'border');
+                tipsHeader.onclick = () => { tipsList.classList.toggle('hidden'); };
+                leftPanelBottom.appendChild(guidance);
+            }
+        }
+
+        // --- File Upload and Progress Logic ---
+        const uploadForm = document.getElementById('upload-form');
+        const progressContainer = document.getElementById('progress-container');
+        const progressText = document.getElementById('progress-text');
+        const progressBar = document.getElementById('progress-bar');
+        const progressDetails = document.getElementById('progress-details');
+
+        uploadForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(uploadForm);
+            const files = formData.getAll('files');
+            if (files.length === 0 || files[0].name === '') {
+                alert("Please select at least one file to upload.");
+                return;
+            }
+
+            progressContainer.classList.remove('hidden');
+            progressText.innerText = 'Uploading...';
+            progressBar.style.width = '0%';
+            progressDetails.innerText = '';
+            uploadForm.querySelector('button').disabled = true;
+
+            fetch('/process', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.task_id) {
+                    pollProgress(data.task_id);
+                } else {
+                    throw new Error(data.error || 'Failed to start processing.');
+                }
+            })
+            .catch(error => {
+                console.error('Upload error:', error);
+                progressText.innerText = 'Upload Failed';
+                progressDetails.innerText = error.message;
+                uploadForm.querySelector('button').disabled = false;
+            });
+        });
+
+        function pollProgress(taskId) {
+            const poller = setInterval(() => {
+                fetch(`/progress_status/${taskId}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.status === 'processing') {
+                            const percent = (data.total > 0) ? (data.current / data.total) * 100 : 0;
+                            progressBar.style.width = percent + '%';
+                            progressText.innerText = `Processing: ${data.filename}`;
+                            progressDetails.innerText = `${data.current} / ${data.total} chunks embedded`;
+                        } else if (data.status === 'done') {
+                            clearInterval(poller);
+                            progressText.innerText = 'Processing Complete';
+                            progressDetails.innerText = `Successfully added ${data.added} new chunks. Page will reload.`;
+                            progressBar.style.width = '100%';
+                            setTimeout(() => {
+                                window.location.reload();
+                            }, 2000);
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error polling progress:', error);
+                        clearInterval(poller);
+                        progressText.innerText = 'An error occurred during processing.';
+                        uploadForm.querySelector('button').disabled = false;
+                    });
+            }, 1500);
+        }
+
+        // --- Collapsible Upload Section ---
+        const uploadHeader = document.getElementById('upload-header');
+        const uploadContent = document.getElementById('upload-content');
+        const uploadChevron = document.getElementById('upload-chevron');
+
+        uploadHeader.addEventListener('click', () => {
+            uploadContent.classList.toggle('hidden');
+            uploadChevron.classList.toggle('rotate-180');
+        });
+    });
+</script>
+</body>
+</html>

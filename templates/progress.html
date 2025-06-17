@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Processing Documents...</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 min-h-screen flex items-center justify-center">
+    <div class="max-w-xl w-full bg-white p-8 rounded-lg shadow-md text-center">
+        <h1 id="status-text" class="text-2xl font-semibold mb-4">Processing your documents...</h1>
+        <div class="w-full bg-gray-200 rounded-full h-4 mb-4">
+            <div id="progress-bar" class="bg-blue-600 h-4 rounded-full" style="width: 0%"></div>
+        </div>
+        <p id="progress-details" class="text-sm text-gray-600">&nbsp;</p>
+    </div>
+
+    <script>
+        const taskId = "{{ task_id }}";
+        const statusText = document.getElementById('status-text');
+        const progressBar = document.getElementById('progress-bar');
+        const progressDetails = document.getElementById('progress-details');
+
+        function pollProgress() {
+            fetch(`/progress_status/${taskId}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'processing') {
+                        const percent = (data.total > 0) ? (data.current / data.total) * 100 : 0;
+                        progressBar.style.width = percent + '%';
+                        statusText.innerText = `Processing: ${data.filename}`;
+                        progressDetails.innerText = `${data.current} / ${data.total} chunks embedded`;
+                    } else if (data.status === 'done') {
+                        clearInterval(poller);
+                        statusText.innerText = 'Processing Complete!';
+                        progressDetails.innerText = `Successfully added ${data.added} new chunks to the knowledge base.`;
+                        // Redirect back to the main page after a short delay
+                        setTimeout(() => {
+                            window.location.href = '/';
+                        }, 2000);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error polling progress:', error);
+                    clearInterval(poller);
+                    statusText.innerText = 'An error occurred.';
+                });
+        }
+
+        const poller = setInterval(pollProgress, 1000);
+        pollProgress(); // Poll immediately on page load
+    </script>
+</body>
+</html>

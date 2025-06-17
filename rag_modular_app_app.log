@@ -1,0 +1,878 @@
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+Address already in use
+Port 5013 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+Address already in use
+Port 5013 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+Address already in use
+Port 5013 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+Address already in use
+Port 5013 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+Address already in use
+Port 5013 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.108.216.113 - - [15/Jun/2025 07:16:42] "[32mGET / HTTP/1.1[0m" 302 -
+100.108.216.113 - - [15/Jun/2025 07:16:43] "GET /ask HTTP/1.1" 200 -
+100.108.216.113 - - [15/Jun/2025 07:16:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+192.168.2.232 - - [15/Jun/2025 08:02:05] "GET /ask HTTP/1.1" 200 -
+192.168.2.232 - - [15/Jun/2025 08:02:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+192.168.2.232 - - [15/Jun/2025 08:20:38] "[32mGET / HTTP/1.1[0m" 302 -
+192.168.2.232 - - [15/Jun/2025 08:20:38] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 11:50:15] "[32mGET / HTTP/1.1[0m" 302 -
+100.89.32.15 - - [15/Jun/2025 11:50:15] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 11:50:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 248-980-651
+100.89.32.15 - - [15/Jun/2025 12:05:48] "[32mGET / HTTP/1.1[0m" 302 -
+100.89.32.15 - - [15/Jun/2025 12:05:48] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 12:06:21] "GET /ask?query=tell+me+about+the+encoder+decoder+process HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 12:10:09] "GET /ask?query=What+is+scaled+dot-product+attention?%0D%0A HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 12:10:29] "GET /ask?query=Why+does+the+paper+use+multi-head+attention+instead+of+a+single+attention+mechanism?%0D%0A HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 12:10:47] "GET /ask?query=What+are+the+two+main+components+of+the+RAG+model?%0D%0A HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 12:11:13] "GET /ask?query=How+is+the+retriever+component+trained+in+this+paper?%0D%0A HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 12:11:35] "GET /ask?query=What+advantages+does+RAG+have+over+pre-trained+seq2seq+models+according+to+the+authors?%0D%0A HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 12:12:26] "GET /ask?query=Provide+an+example+of+a+chain-of-thought+prompt+from+the+paper.%0D%0A HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 12:12:55] "GET /ask?query=On+which+types+of+reasoning+tasks+did+chain-of-thought+show+the+biggest+improvement?%0D%0A HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 12:13:14] "GET /ask?query=What+is+the+key+hypothesis+for+why+CoT+works? HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 12:14:28] "GET /ask?query=Explain+how+the+original+RAG+framework+enhances+a+Transformer-based+model's+ability+to+perform+knowledge-intensive+tasks.+Then,+describe+how+Chain-of-Thought+prompting+could+be+integrated+into+the+RAG's+generator+step+to+further+improve+the+model's+reasoning+and+faithfulness+to+the+retrieved+documents. HTTP/1.1" 200 -
+ * Detected change in '/home/doug/rag_modular/ask_route.py', reloading
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+--- Running initial query ---
+--- Initial answer was helpful. Using result. ---
+--- Running initial query ---
+--- Initial answer was helpful. Using result. ---
+--- Running initial query ---
+--- Initial answer was helpful. Using result. ---
+--- Running initial query ---
+--- Initial answer was helpful. Using result. ---
+--- Running initial query ---
+--- Initial answer was helpful. Using result. ---
+--- Running initial query ---
+--- Initial answer was helpful. Using result. ---
+--- Running initial query ---
+--- Initial answer was unhelpful. Trying query expansion fallback. ---
+Generating sub-queries...
+Error generating sub-queries: Expecting value: line 1 column 1 (char 0)
+--- Running initial query ---
+--- Initial answer was helpful. Using result. ---
+--- Running initial query ---
+--- Initial answer was helpful. Using result. ---
+--- Running initial query ---
+--- Initial answer was helpful. Using result. ---
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 248-980-651
+100.89.32.15 - - [15/Jun/2025 12:24:12] "[32mGET / HTTP/1.1[0m" 302 -
+100.89.32.15 - - [15/Jun/2025 12:24:12] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 12:24:18] "GET /ask?query=Explain+how+the+original+RAG+framework+enhances+a+Transformer-based+model's+ability+to+perform+knowledge-intensive+tasks.+Then,+describe+how+Chain-of-Thought+prompting+could+be+integrated+into+the+RAG's+generator+step+to+further+improve+the+model's+reasoning+and+faithfulness+to+the+retrieved+documents. HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 12:24:39] "GET /ask?query=what+are+the+practical+uses+of+RAG? HTTP/1.1" 200 -
+ * Detected change in '/home/doug/rag_modular/ask_route.py', reloading
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+--- Initial answer unhelpful. Trying query expansion. ---
+ * Restarting with stat
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+Traceback (most recent call last):
+  File "/home/doug/rag_modular/app.py", line 42, in <module>
+    app = create_app()
+  File "/home/doug/rag_modular/app.py", line 37, in create_app
+    from ask_route import ask_bp
+  File "/home/doug/rag_modular/ask_route.py", line 16, in <module>
+    md = MarkdownIt()
+NameError: name 'MarkdownIt' is not defined
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+Traceback (most recent call last):
+  File "/home/doug/rag_modular/app.py", line 42, in <module>
+    app = create_app()
+  File "/home/doug/rag_modular/app.py", line 37, in create_app
+    from ask_route import ask_bp
+  File "/home/doug/rag_modular/ask_route.py", line 16, in <module>
+    md = MarkdownIt()
+NameError: name 'MarkdownIt' is not defined
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+Traceback (most recent call last):
+  File "/home/doug/rag_modular/app.py", line 42, in <module>
+    app = create_app()
+  File "/home/doug/rag_modular/app.py", line 37, in create_app
+    from ask_route import ask_bp
+  File "/home/doug/rag_modular/ask_route.py", line 16, in <module>
+    md = MarkdownIt()
+NameError: name 'MarkdownIt' is not defined
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 248-980-651
+100.89.32.15 - - [15/Jun/2025 12:40:43] "[32mGET / HTTP/1.1[0m" 302 -
+100.89.32.15 - - [15/Jun/2025 12:40:43] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 12:41:27] "GET /ask?query=what+are+the+practical+uses+of+RAG? HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 13:59:33] "[32mGET / HTTP/1.1[0m" 302 -
+100.89.32.15 - - [15/Jun/2025 13:59:33] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 13:59:42] "GET /ask?query=what+are+the+practical+uses+of+RAG? HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 925-239-915
+100.89.32.15 - - [15/Jun/2025 14:16:35] "[32mGET / HTTP/1.1[0m" 302 -
+100.89.32.15 - - [15/Jun/2025 14:16:35] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 14:35:17] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 14:38:03] "GET /ask?query=can+you+provide+a+list+of+the+5+most+important+takeaways+from+these+docs?%0D%0A HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 14:42:51] "[32mGET / HTTP/1.1[0m" 302 -
+100.89.32.15 - - [15/Jun/2025 14:42:51] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 14:43:38] "GET /ask?query=can+you+provide+a+list+of+the+10+takeaways+from+chain+of+thought+prompting?%0D%0A HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 14:47:41] "[32mGET / HTTP/1.1[0m" 302 -
+100.89.32.15 - - [15/Jun/2025 14:47:41] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 14:48:26] "GET /ask?query=can+you+provide+a+list+of+the+10+takeaways+from+attentino+is+all+you+need? HTTP/1.1" 200 -
+ * Detected change in '/home/doug/rag_modular/app.py', reloading
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+--- Running initial query ---
+--- Initial answer unhelpful. Trying Query Expansion fallback. ---
+Generating sub-queries...
+--- Query Expansion still unhelpful. Trying Reasoning Agent fallback. ---
+--- Running initial query ---
+--- Initial answer unhelpful. Trying Query Expansion fallback. ---
+Generating sub-queries...
+--- Query Expansion still unhelpful. Trying Reasoning Agent fallback. ---
+--- Running initial query ---
+--- Initial answer unhelpful. Trying Query Expansion fallback. ---
+Generating sub-queries...
+--- Query Expansion still unhelpful. Trying Reasoning Agent fallback. ---
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/home/doug/rag_modular/app.py", line 18, in <module>
+    from admin_route import admin_bp
+ModuleNotFoundError: No module named 'admin_route'
+Traceback (most recent call last):
+  File "/home/doug/rag_modular/app.py", line 18, in <module>
+    from admin_route import admin_bp
+ModuleNotFoundError: No module named 'admin_route'
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [15/Jun/2025 15:15:44] "[32mGET / HTTP/1.1[0m" 302 -
+100.89.32.15 - - [15/Jun/2025 15:15:44] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 15:16:31] "GET /ask?query=Give+me+a+4+paragraph+summary+of+RAG+for+NLP%0D%0A HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 15:16:48] "GET /admin HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 15:28:08] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 15:32:35] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 15:32:37] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 15:32:49] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 15:32:50] "GET /ask HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [15/Jun/2025 15:33:50] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 15:35:00] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 15:35:02] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 15:35:02] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 15:35:03] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 15:35:04] "GET /ask HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [15/Jun/2025 15:36:41] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 15:36:43] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 15:37:47] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 15:37:49] "GET /ask HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [15/Jun/2025 15:38:52] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 15:38:54] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 15:38:55] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 15:38:56] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 15:41:48] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 15:41:49] "GET /ask HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [15/Jun/2025 15:43:25] "GET /ask HTTP/1.1" 200 -
+100.108.216.113 - - [15/Jun/2025 17:45:15] "[32mGET / HTTP/1.1[0m" 302 -
+100.108.216.113 - - [15/Jun/2025 17:45:15] "GET /ask HTTP/1.1" 200 -
+100.108.216.113 - - [15/Jun/2025 17:45:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+192.168.2.232 - - [15/Jun/2025 18:03:27] "GET /ask HTTP/1.1" 200 -
+192.168.2.232 - - [15/Jun/2025 22:25:20] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [15/Jun/2025 22:28:10] "GET /ask HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [16/Jun/2025 11:17:36] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 11:18:40] "[35m[1mGET /ask-stream?query=Critically%20evaluate%20a%20potential%20failure%20mode%20of%20the%20RAG%20framework.%20Specifically,%20if%20the%20retriever%20fetches%20multiple%20documents%20with%20conflicting%20facts%20about%20a%20single%20topic,%20describe%20a%20strategy%20that%20leverages%20Chain-of-Thought%20prompting%20to%20make%20the%20generative%20model%20acknowledge%20these%20contradictions%20instead%20of%20confidently%20asserting%20a%20single,%20incorrect%20answer.%20Structure%20your%20response%20with%20a%20clear%20"Problem"%20and%20"Proposed%20Solution"%20section. HTTP/1.1[0m" 500 -
+Error on request:
+Traceback (most recent call last):
+  File "/home/doug/venvs/insightbridge310/lib/python3.10/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "/home/doug/venvs/insightbridge310/lib/python3.10/site-packages/werkzeug/serving.py", line 333, in execute
+    for data in application_iter:
+  File "/home/doug/venvs/insightbridge310/lib/python3.10/site-packages/werkzeug/wsgi.py", line 256, in __next__
+    return self._next()
+  File "/home/doug/venvs/insightbridge310/lib/python3.10/site-packages/werkzeug/wrappers/response.py", line 32, in _iter_encoded
+    for item in iterable:
+  File "/home/doug/rag_modular/ask_route.py", line 67, in stream_response
+    faiss_index = current_app.faiss_index
+  File "/home/doug/venvs/insightbridge310/lib/python3.10/site-packages/werkzeug/local.py", line 318, in __get__
+    obj = instance._get_current_object()
+  File "/home/doug/venvs/insightbridge310/lib/python3.10/site-packages/werkzeug/local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [16/Jun/2025 11:21:29] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 11:21:45] "GET /ask-stream?query=Critically%20evaluate%20a%20potential%20failure%20mode%20of%20the%20RAG%20framework.%20Specifically,%20if%20the%20retriever%20fetches%20multiple%20documents%20with%20conflicting%20facts%20about%20a%20single%20topic,%20describe%20a%20strategy%20that%20leverages%20Chain-of-Thought%20prompting%20to%20make%20the%20generative%20model%20acknowledge%20these%20contradictions%20instead%20of%20confidently%20asserting%20a%20single,%20incorrect%20answer.%20Structure%20your%20response%20with%20a%20clear%20"Problem"%20and%20"Proposed%20Solution"%20section. HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 11:22:42] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 11:22:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+100.89.32.15 - - [16/Jun/2025 11:23:19] "GET /ask-stream?query=list%20a%20few%20problem%20statements%20mentioned%20in%20the%20papers HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [16/Jun/2025 11:26:39] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 11:27:05] "GET /ask-stream?query=provide%20some%20basic%20guidance%20or%20implementing%20rag HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [16/Jun/2025 11:30:55] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 11:31:21] "GET /ask-stream?query=explain%20COT%20in%20one%20paragraph%0A HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [16/Jun/2025 11:40:04] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 11:40:36] "GET /ask-stream?query=explain%20cot%20in%20a%20paragraph HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [16/Jun/2025 11:43:21] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 11:43:26] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 11:43:27] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 11:43:30] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 11:43:32] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 11:43:33] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 11:43:37] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 11:44:01] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 11:46:12] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 11:46:13] "GET /ask HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [16/Jun/2025 11:46:41] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 11:47:06] "GET /ask-stream?query=provide%20a%20summary%20of%20COT%20in%20one%20paragraph HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [16/Jun/2025 11:51:28] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 11:51:46] "GET /ask-stream?query=explain%20COT%20to%20me%20like%20I%20am%20a%2012%20year%20old HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [16/Jun/2025 11:54:32] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 11:54:55] "GET /ask-stream?query=explain%20RAG%20to%20me%20like%20i%20am%20a%2012%20year%20old%0A HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [16/Jun/2025 12:01:44] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 12:02:10] "GET /ask-stream?query=summarize%20the%20attention%20is%20all%20you%20need%20paper%20in%20a%20paragraph%0A HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [16/Jun/2025 12:04:02] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 12:04:34] "GET /ask-stream?query=summarize%20the%20attention%20is%20all%20you%20need%20paper%20so%20a%2012%20year%20old%20can%20understand%20it HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [16/Jun/2025 12:10:54] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 12:11:19] "GET /ask?query=explain+RAG+in+a+paragraph+as+if+I+am+a+12+year+old HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [16/Jun/2025 12:14:20] "GET /ask?query=explain+RAG+in+a+paragraph+as+if+I+am+a+12+year+old HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 12:14:37] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 12:15:02] "POST /ask HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [16/Jun/2025 12:15:55] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 12:16:27] "GET /ask-stream?query=explain%20cot%20like%20I%20am%20a%2012%20year%20old.%20one%20paragraph%20only HTTP/1.1" 200 -
+100.108.216.113 - - [16/Jun/2025 12:46:43] "[32mGET / HTTP/1.1[0m" 302 -
+100.108.216.113 - - [16/Jun/2025 12:46:43] "GET /ask HTTP/1.1" 200 -
+100.108.216.113 - - [16/Jun/2025 12:47:39] "GET /ask-stream?query=Explain%20rag%20in%20a%20paragraph%20like%20I’m%20a%2012%20year%20old HTTP/1.1" 200 -
+100.108.216.113 - - [16/Jun/2025 12:48:40] "GET /ask HTTP/1.1" 200 -
+100.108.216.113 - - [16/Jun/2025 12:48:44] "GET /admin HTTP/1.1" 200 -
+100.108.216.113 - - [16/Jun/2025 12:49:25] "[32mGET / HTTP/1.1[0m" 302 -
+100.108.216.113 - - [16/Jun/2025 12:49:25] "GET /ask HTTP/1.1" 200 -
+192.168.2.221 - - [16/Jun/2025 13:48:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+192.168.2.221 - - [16/Jun/2025 13:48:47] "GET /ask HTTP/1.1" 200 -
+192.168.2.221 - - [16/Jun/2025 13:48:48] "GET /ask HTTP/1.1" 200 -
+192.168.2.221 - - [16/Jun/2025 13:57:07] "[33mGET /index HTTP/1.1[0m" 404 -
+192.168.2.221 - - [16/Jun/2025 13:57:10] "[33mGET /index HTTP/1.1[0m" 404 -
+192.168.2.221 - - [16/Jun/2025 13:57:15] "[33mGET /index.html HTTP/1.1[0m" 404 -
+192.168.2.221 - - [16/Jun/2025 13:58:01] "[32mGET / HTTP/1.1[0m" 302 -
+192.168.2.221 - - [16/Jun/2025 13:58:01] "GET /ask HTTP/1.1" 200 -
+192.168.2.221 - - [16/Jun/2025 14:15:24] "GET /ask HTTP/1.1" 200 -
+192.168.2.221 - - [16/Jun/2025 14:15:26] "GET /ask HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [16/Jun/2025 14:16:00] "GET /ask HTTP/1.1" 200 -
+Exception in thread Thread-4 (background_task_wrapper):
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+100.89.32.15 - - [16/Jun/2025 14:17:21] "[32mPOST /upload HTTP/1.1[0m" 302 -
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/doug/rag_modular/app.py", line 138, in background_task_wrapper
+    current_app.kb.add_documents(file_paths, progress_status, task_id)
+NameError: name 'current_app' is not defined. Did you mean: 'create_app'?
+100.89.32.15 - - [16/Jun/2025 14:17:21] "GET /progress/d7549a758d65282a596ace46f44f9c0a HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:21] "GET /progress/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:21] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:22] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:23] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:24] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:25] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:26] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:27] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:28] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:29] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:30] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:31] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:32] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:33] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:34] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:36] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:36] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:37] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:38] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:43] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:44] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:47] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:50] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:52] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:54] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:54] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:55] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:56] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:17:59] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:02] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:04] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:08] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:09] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:13] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:13] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:14] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:15] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:16] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:17] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:18] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:19] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:20] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:21] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:22] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:23] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:24] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:25] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:26] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:27] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:28] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:29] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:32] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:33] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:34] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:35] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:36] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:37] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:38] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:39] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:40] "[32mGET / HTTP/1.1[0m" 302 -
+100.89.32.15 - - [16/Jun/2025 14:18:40] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:40] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:41] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:18:42] "GET /ask HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [16/Jun/2025 14:22:32] "GET /ask HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [16/Jun/2025 14:53:06] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:53:32] "POST /process HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:53:34] "GET /progress_status/7d53a425366120bd46baf18e2dce6420 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:53:35] "GET /progress_status/7d53a425366120bd46baf18e2dce6420 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:53:37] "GET /progress_status/7d53a425366120bd46baf18e2dce6420 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:53:38] "GET /progress_status/7d53a425366120bd46baf18e2dce6420 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:53:40] "GET /progress_status/7d53a425366120bd46baf18e2dce6420 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:53:41] "GET /progress_status/7d53a425366120bd46baf18e2dce6420 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:53:43] "GET /progress_status/7d53a425366120bd46baf18e2dce6420 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:53:44] "GET /progress_status/7d53a425366120bd46baf18e2dce6420 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:53:46] "GET /progress_status/7d53a425366120bd46baf18e2dce6420 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:53:47] "GET /progress_status/7d53a425366120bd46baf18e2dce6420 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:53:49] "GET /progress_status/7d53a425366120bd46baf18e2dce6420 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:53:51] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:54:33] "GET /admin HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:55:17] "GET /ask-stream?query=summarize%20in%20one%20paragraph%20the%20generative%20paper%20like%20I%20am%20a%2012%20year%20old. HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 14:55:45] "GET /ask HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 917 chunks and a FAISS index with 917 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [16/Jun/2025 14:59:16] "GET /ask HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 917 chunks and a FAISS index with 917 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [16/Jun/2025 15:02:37] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 15:05:16] "GET /ask-stream?query=give%20me%20an%20end%20user%20friendly%20summary%20of%20the%20generative%20AI%20paper.%20No%20more%20than%204%20paragraphs.%0A HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 15:07:18] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 15:07:27] "GET /ask HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 917 chunks and a FAISS index with 917 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [16/Jun/2025 15:08:15] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 15:08:48] "GET /ask-stream?query=provide%20a%20one%20sentence%20summary%20of%20each%20of%20the%20papers%0A HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 917 chunks and a FAISS index with 917 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [16/Jun/2025 15:15:33] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 15:15:58] "GET /ask-stream?query=list%20a%20specific%20practical%20application%20of%20AI%0A HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 917 chunks and a FAISS index with 917 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [16/Jun/2025 15:18:24] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 15:18:46] "GET /ask-stream?query=what%20are%20the%20papers%20names%20that%20are%20in%20my%20knowledge%20base HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 15:19:44] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 15:19:45] "GET /progress_status/ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 15:19:58] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 15:20:13] "GET /admin HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 15:20:16] "GET /admin/backup HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 15:21:34] "GET /ask HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 917 chunks and a FAISS index with 917 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [16/Jun/2025 15:44:01] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:10:59] "GET /admin HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:11:06] "[32mPOST /admin/reset HTTP/1.1[0m" 302 -
+100.89.32.15 - - [16/Jun/2025 17:11:06] "GET /admin HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:11:08] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:11:46] "POST /process HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:11:47] "GET /progress_status/fa97d5d29d43840c840b17565040a2bd HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:11:50] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:12:20] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:12:21] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:12:31] "POST /process HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:12:33] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:12:35] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:12:36] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:12:37] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:12:39] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:12:40] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:12:42] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:12:43] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:12:45] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:12:46] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:12:48] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:12:49] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:12:51] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:12:52] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:12:54] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:12:56] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:12:57] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:12:58] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:00] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:01] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:03] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:04] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:06] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:07] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:09] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:11] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:12] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:13] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:15] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:16] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:18] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:19] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:21] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:22] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:24] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:25] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:27] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:28] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:30] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:31] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:33] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:34] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:36] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:37] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:39] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:40] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:42] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:43] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:45] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:48] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:51] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:53] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:54] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:13:57] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:14:00] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:14:03] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:14:09] "GET /progress_status/40f1e07157b3e5a5ffa55b7e86d2cd76 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:14:13] "GET /ask HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 1587 chunks and a FAISS index with 1587 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [16/Jun/2025 17:19:23] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:19:34] "POST /process HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:19:36] "GET /progress_status/d0ec3048fe9b6808ea8637bed87feaa0 HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:19:38] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:19:43] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:21:37] "GET /ask-stream?query=give%20me%20a%20summary%20of%20the%20kubark%20doc%20in%20just%20a%20couple%20paragraphs. HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:23:25] "GET /admin HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:23:29] "[32mPOST /admin/reset HTTP/1.1[0m" 302 -
+100.89.32.15 - - [16/Jun/2025 17:23:29] "GET /admin HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:23:34] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:23:45] "POST /process HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:23:47] "GET /progress_status/ac80dac0fe9f18203edc96e598801b0f HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:23:49] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:07] "POST /process HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:09] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:10] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:11] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:13] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:14] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:16] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:18] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:19] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:20] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:22] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:23] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:25] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:26] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:28] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:29] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:31] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:32] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:34] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:35] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:37] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:38] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:40] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:41] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:43] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:44] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:46] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:47] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:49] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:50] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:52] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:53] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:55] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:56] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:58] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:24:59] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:01] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:02] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:04] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:05] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:07] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:08] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:10] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:11] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:13] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:14] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:16] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:17] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:19] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:20] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:22] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:23] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:25] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:26] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:28] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:29] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:31] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:32] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:34] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:35] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:37] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:38] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:40] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:41] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:43] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:44] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:46] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:47] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:49] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:50] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:52] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:53] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:55] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:56] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:58] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:25:59] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:26:01] "GET /progress_status/c5705519fd55f48f13cc79f6c04fa7be HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:26:03] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:26:28] "GET /ask-stream?query=give%20me%20a%20summary%20of%20both%20documents,%204%20paragraphs%20max HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:27:43] "GET /ask-stream?query=give%20me%20a%20summary%20of%20simple%20sabotage%20doc%20in%20two%20paragraphs HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:28:48] "GET /ask-stream?query=give%20me%20a%20summary%20of%20kubak%20and%20simple%20sabotage%20docs%20with%20a%20heading%20%20above%20each%20document%20summary HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:30:05] "GET /ask-stream?query=how%20can%20I%20efectivly%20sabotage%20a%20meeting? HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:50:53] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 17:50:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+100.89.32.15 - - [16/Jun/2025 17:51:47] "GET /ask-stream?query=How%20can%20I%20sabotage%20a%20meeting? HTTP/1.1" 200 -
+Loading existing data from disk...
+Loaded 1795 chunks and a FAISS index with 1795 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [16/Jun/2025 18:07:28] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 18:07:41] "GET /ask-stream?query=How%20can%20I%20sabotage%20a%20meeting? HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 18:08:50] "GET /ask-stream?query=How%20can%20I%20sabotage%20a%20meeting,%20please%20infer%20how%20these%20options%20might%20apply%20to%20meetings%20in%202025. HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 18:13:33] "GET /ask-stream?query=How%20can%20I%20sabotage%20a%20meeting,%20make%20sure%20there%20are%20at%20least%207%20points. HTTP/1.1" 200 -
+100.89.32.15 - - [16/Jun/2025 18:44:22] "GET /ask-stream?query=How%20could%20I%20be%20less%20effective%20in%20a%20zoom%20or%20teams%20meeting? HTTP/1.1" 200 -
+100.108.216.113 - - [16/Jun/2025 20:31:25] "GET /admin HTTP/1.1" 200 -
+100.108.216.113 - - [16/Jun/2025 20:31:25] "GET /ask HTTP/1.1" 200 -
+100.108.216.113 - - [16/Jun/2025 20:31:26] "GET /ask HTTP/1.1" 200 -
+100.108.216.113 - - [16/Jun/2025 20:31:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+100.89.32.15 - - [17/Jun/2025 00:30:48] "GET /ask HTTP/1.1" 200 -
+100.89.32.15 - - [17/Jun/2025 00:32:16] "GET /ask-stream?query=Can%20you%20explain%20how%20I%20might%20slow%20down%20a%20meeting? HTTP/1.1" 200 -
+100.89.32.15 - - [17/Jun/2025 00:32:55] "GET /ask-stream?query=Can%20you%20explain%20how%20I%20might%20slow%20down%20a%20meeting?%20Make%20sure%20you%20provide%207%20numbered%20answers.%0A HTTP/1.1" 200 -
+100.89.32.15 - - [17/Jun/2025 00:34:50] "GET /ask-stream?query=Can%20you%20explain%20how%20I%20might%20sabotage%20a%20meeting?%20Make%20sure%20you%20provide%207%20numbered%20answers.%0A HTTP/1.1" 200 -
+100.89.32.15 - - [17/Jun/2025 00:37:18] "GET /ask-stream?query=Can%20you%20explain%20how%20I%20can%20sabotage%20a%20meeting,%20make%20sure%20there%20are%206-7%20responses. HTTP/1.1" 200 -
+100.89.32.15 - - [17/Jun/2025 00:39:16] "GET /ask-stream?query=Can%20you%20explain%20how%20I%20can%20sabotage%20a%20meeting,%20assume%20only%201940s%20techology HTTP/1.1" 200 -
+100.89.32.15 - - [17/Jun/2025 00:40:14] "GET /ask-stream?query=Can%20you%20explain%20how%20I%20can%20sabotage%20a%20meeting,%20assume%20only%201940s%20techology,%20but%20dont%20restate%20any%20part%20of%20my%20prompt.%20Make%20sure%20to%20have%20at%20least%206%20responses.%0A HTTP/1.1" 200 -

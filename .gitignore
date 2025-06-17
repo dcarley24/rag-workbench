@@ -1,0 +1,18 @@
+# Python stuff
+__pycache__/
+*.pyc
+venv/
+env/
+
+# Data and Index Files
+*.json
+*.faiss
+
+# Uploads, Backups, and Data
+/uploads/
+/backups/
+
+# IDE / OS files
+.idea/
+.vscode/
+.DS_Store

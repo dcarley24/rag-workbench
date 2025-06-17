@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .font-sans { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-100 font-sans">
+    <div class="max-w-4xl mx-auto p-6 md:p-10">
+        <h1 class="text-3xl font-bold text-slate-800 mb-6">Application Admin Panel</h1>
+        <a href="/ask" class="text-sm text-blue-600 underline mb-8 block">&larr; Back to Workbench</a>
+
+        <div class="bg-white rounded-lg shadow-md border border-slate-200 mb-8">
+            <div class="p-4 border-b border-slate-200">
+                <h2 class="text-lg font-semibold text-slate-700">Knowledge Base Status</h2>
+            </div>
+            <div class="p-4">
+                <dl class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                    <div class="p-3 bg-slate-50 rounded-lg">
+                        <dt class="font-bold text-slate-600">JSON Data File</dt>
+                        <dd class="text-slate-800">{{ status.json_file_status }} ({{ status.json_file_size }})</dd>
+                    </div>
+                    <div class="p-3 bg-slate-50 rounded-lg">
+                        <dt class="font-bold text-slate-600">FAISS Index File</dt>
+                        <dd class="text-slate-800">{{ status.faiss_file_status }} ({{ status.faiss_file_size }})</dd>
+                    </div>
+                    <div class="p-3 bg-slate-50 rounded-lg">
+                        <dt class="font-bold text-slate-600">Chunks in Memory</dt>
+                        <dd class="text-slate-800">{{ status.chunks_in_memory }}</dd>
+                    </div>
+                    <div class="p-3 bg-slate-50 rounded-lg">
+                        <dt class="font-bold text-slate-600">Vectors in Index</dt>
+                        <dd class="text-slate-800">{{ status.vectors_in_index }}</dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md border border-slate-200">
+            <div class="p-4 border-b border-slate-200">
+                <h2 class="text-lg font-semibold text-slate-700">Admin Actions</h2>
+            </div>
+            <div class="p-4 space-y-6">
+                <div>
+                    <h3 class="font-semibold text-slate-800">Download Backup</h3>
+                    <p class="text-xs text-slate-500 mb-2">Download a .zip archive of the current JSON data and FAISS index.</p>
+                    <a href="/admin/backup" class="px-4 py-2 bg-slate-700 text-white text-sm font-semibold rounded-lg hover:bg-slate-800">Download Backup</a>
+                </div>
+
+                <div class="border-t pt-6 border-red-200">
+                    <h3 class="font-semibold text-red-800">Reset Environment</h3>
+                    <p class="text-xs text-red-600 mb-2">This will permanently delete all indexed data and reset the application to its initial state. This action cannot be undone.</p>
+                    <form action="/admin/reset" method="post" onsubmit="return confirm('Are you absolutely sure you want to delete all indexed data?');">
+                        <button type="submit" class="px-4 py-2 bg-red-600 text-white text-sm font-semibold rounded-lg hover:bg-red-700">Reset Environment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

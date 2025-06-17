@@ -1,0 +1,19 @@
+nohup: ignoring input
+Loading existing data from disk...
+Loaded 719 chunks and a FAISS index with 719 vectors.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5013
+ * Running on http://192.168.2.233:5013
+[33mPress CTRL+C to quit[0m
+100.89.32.15 - - [14/Jun/2025 22:34:32] "GET /ask?query=Provide+an+example+of+a+chain-of-thought+prompt+from+the+paper. HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jun/2025 22:41:09] "[32mGET / HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Jun/2025 22:41:09] "GET /ask HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jun/2025 22:41:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [14/Jun/2025 22:41:49] "GET /ask?query=I+would+like+to+understand+the+concept+of+RAG+in+relation+to+the+internet HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jun/2025 22:42:46] "GET /ask?query=I+would+like+to+know+about+the+inception+of+RAG%0D%0A HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jun/2025 22:44:25] "GET /ask?query=what+is+prompt+chaining%0D%0A HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jun/2025 22:44:43] "GET /ask?query=what+is+chaining%0D%0A HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jun/2025 22:45:12] "GET /ask?query=what+is+chain-of-though+prompting%0D%0A HTTP/1.1" 200 -

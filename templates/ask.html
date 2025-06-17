@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ask Your Documents</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    function toggleWhatsThis() {
+        const info = document.getElementById('whatsThis');
+        info.classList.toggle('hidden');
+    }
+    function toggleSettings() {
+        const panel = document.getElementById('settingsPanel');
+        panel.classList.toggle('hidden');
+    }
+    </script>
+</head>
+<body class="bg-gray-100 text-gray-800 p-6">
+    <div class="max-w-4xl mx-auto">
+        <div class="bg-gray-200 p-4 rounded mb-4 flex items-center justify-between">
+            <h1 class="text-2xl font-semibold">Ask Your Documents</h1>
+            <div class="space-x-4 text-sm">
+                <a href="/" class="text-blue-600 underline">Back to Upload</a>
+                <button onclick="toggleSettings()" class="text-blue-600 underline">Settings</button>
+            </div>
+        </div>
+
+        <div id="settingsPanel" class="hidden mb-4 bg-white border rounded p-4 shadow text-sm">
+             <h3 class="font-bold mb-2">Query Settings</h3>
+             <p class="text-xs text-gray-600 mb-4">Adjust the model and context verbosity for the RAG query.</p>
+             <form action="/ask" method="get" class="space-y-3">
+                 <input type="hidden" name="query" value="{{ query or '' }}">
+
+                <div>
+                    <label for="model" class="block text-sm font-medium text-gray-700">AI Model</label>
+                    <select name="model" id="model" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
+                        {% for value, text in model_options.items() %}
+                            <option value="{{ value }}" {% if model == value %}selected{% endif %}>{{ value }} ({{ text }})</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                 <div>
+                    <label for="detail" class="block text-sm font-medium text-gray-700">Context Detail</label>
+                    <select name="detail" id="detail" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
+                        {% for value, text in detail_options.items() %}
+                             <option value="{{ value }}" {% if detail == value %}selected{% endif %}>{{ text }}</option>
+                        {% endfor %}
+                    </select>
+                 </div>
+                 <button type="submit" class="px-4 py-2 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700">Apply Settings & Re-Ask</button>
+             </form>
+        </div>
+
+        <div class="bg-white border rounded p-6 shadow-sm mb-6">
+            <form action="/ask" method="get">
+                <textarea name="query" class="w-full border rounded p-2 text-lg" placeholder="Ask a question about your documents...">{{ query or '' }}</textarea>
+                <button type="submit" class="mt-3 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700">Ask</button>
+            </form>
+        </div>
+
+        {% if answer %}
+        <div class="bg-white border rounded p-6 shadow-sm mb-6">
+            <h2 class="text-xl font-semibold mb-3">Answer</h2>
+            <textarea readonly class="w-full border-gray-200 rounded p-3 h-64 bg-gray-50 text-base">{{ answer }}</textarea>
+            <button onclick="navigator.clipboard.writeText(document.querySelector('textarea').value)" class="mt-2 px-3 py-1 bg-gray-800 text-white text-sm rounded hover:bg-black">Copy to Clipboard</button>
+            <p class="text-xs text-gray-600 mt-2">
+                Tokens: {{ input_tokens }} in / {{ output_tokens }} out · Estimated Cost: ${{ cost_estimate }}
+            </p>
+        </div>
+        {% endif %}
+
+        {% if results %}
+            <p class="mb-4 text-sm text-gray-600">Answer based on top {{ chunks }} chunks of your uploaded content:</p>
+            <div class="space-y-4">
+                {% for r in results %}
+                    <div class="bg-white border rounded p-4 shadow">
+                        <div class="text-sm text-gray-600 mb-2">
+                            <strong>{{ r.role or "Chunk" }}</strong>
+                            in <em>{{ r.get('title') or r.get('thread_title') or r.get('source_file', '') }}</em>
+                            · {{ r.tokens or "?" }} tokens
+                        </div>
+                        <pre class="whitespace-pre-wrap text-sm">{{ r.preview or r.content or r.text }}</pre>
+                    </div>
+                {% endfor %}
+            </div>
+        {% elif query %}
+            <p class="text-red-600">No results found or error occurred.</p>
+        {% endif %}
+
+        <div class="text-center text-xs text-gray-500 mt-10">
+            <a href="/" class="underline">Back to Upload</a>
+        </div>
+    </div>
+</body>
+</html>

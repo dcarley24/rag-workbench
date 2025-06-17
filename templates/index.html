@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat With Your Documents</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 min-h-screen">
+    <div class="max-w-4xl mx-auto p-6">
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold mb-2">Chat With Your Documents</h1>
+            <p class="text-lg text-gray-600">Your personal search engine, powered by AI.</p>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg p-6 mb-6 shadow-sm">
+            <h2 class="text-xl font-semibold mb-4">Upload New Documents</h2>
+            <p class="text-sm text-gray-600 mb-4">
+                Upload one or more documents (`.pdf`, `.docx`, `.txt`). To upload an entire folder, compress it into a
+                <code>.zip</code> or <code>.tar.gz</code> archive first.
+            </p>
+            <form action="/" method="post" enctype="multipart/form-data">
+                <input type="file" name="files" multiple required class="w-full mb-4 border rounded p-2 text-sm bg-gray-50 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">
+                <button type="submit" class="w-full px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700">Upload and Process</button>
+            </form>
+        </div>
+
+        <div class="text-center">
+             <a href="/ask" class="px-6 py-3 bg-gray-800 text-white font-bold rounded-lg hover:bg-black text-lg">Ask a Question</a>
+             <p class="text-sm text-gray-500 mt-4">Total indexed chunks: {{ total_docs }}</p>
+        </div>
+    </div>
+</body>
+</html>
